@@ -6,6 +6,10 @@ window.addEventListener("DOMContentLoaded", (e)=>{
       var first = parseFloat(document.getElementById('firstNumber').value)
       var second = parseFloat(document.getElementById('secondNumber').value)
       var result = (first % second)
-      resultat.textContent = result
+      if(first != 0 && second != 0){
+         resultat.textContent = result
+      }else{
+         resultat.textContent = "0 ne peut pas être utilisé pour la division"
+      }
    })
 })
