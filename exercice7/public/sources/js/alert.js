@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", (e)=>{
+﻿window.addEventListener("DOMContentLoaded", (e)=>{
    var submit = document.getElementById('submit')
    submit.addEventListener("click", (e)=>{
       var shoeSize = Number(document.getElementById('shoeSize').value)
