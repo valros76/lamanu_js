@@ -3,7 +3,6 @@ window.addEventListener("DOMContentLoaded", (e)=>{
    let changeSrc = (actualImg)=>{
       const searchTerm = "_2"
       var presence = actualImg.src.indexOf(searchTerm)
-      console.log(presence)
       if(presence === -1){
          actualImg.src = actualImg.src.replace(".jpg", "_2.jpg")
       }else{
