@@ -55,8 +55,7 @@ body{
    min-height:100vh;
    max-height:100vh;
    overflow:hidden;
-   /*background-color:#ff3c00;
-      body default color*/   
+   background-color:#ff3c00;  
    color:#fff;
 }
 
