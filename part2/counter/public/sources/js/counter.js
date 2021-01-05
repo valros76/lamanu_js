@@ -39,7 +39,7 @@ decrementation.addEventListener("click", () => {
    decrement(count)
 })
 
-document.addEventListener("keydown", (e) => {
+document.addEventListener("keyup", (e) => {
    switch (e.code) {
       case "ArrowRight":
       case "KeyD":
