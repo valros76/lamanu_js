@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
       e.preventDefault()
       let user_value = parseInt(user_nbr.value)
       count_tests++
-      if (user_nbr.value != "" && (count_tests <= 10)) {
+      if (user_nbr.value != "" && (count_tests <= 10) && user_nbr.value <= 100) {
          nbr_tests.textContent = count_tests
          last_user_nbr = user_nbr.value
          last_test.textContent = last_user_nbr
@@ -47,6 +47,14 @@ window.addEventListener("DOMContentLoaded", (e) => {
             main.style.backgroundColor = "lime"
          }
          user_nbr.value = ""
+      } else if (user_nbr.value > 100) {
+         user_nbr.value = ""
+         annonce.textContent = `Perdu, avez utilisé trop d'essais !`
+         setTimeout(() => {
+            main.style.backgroundColor = "aliceblue"
+         }, 300)
+         count_tests--
+         result.textContent = "La valeur maximale est 100 !"
       } else if (user_nbr.value != "" && (count_tests > 10)) {
          user_nbr.value = ""
          annonce.textContent = `Perdu, avez utilisé trop d'essais !`
