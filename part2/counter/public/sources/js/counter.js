@@ -4,6 +4,13 @@ var decrementation = document.getElementById("decrementation")
 
 let count = 0
 
+let rndNbr = (min, max)=>{
+   min = Math.ceil(min);
+   max = Math.floor(max);
+   return Math.floor(Math.random() * (max - min +1)) + min;
+}
+document.body.style.backgroundColor = `rgba(255,60,${rndNbr(0,125)},1)`
+
 let increment = (count) => {
    count += 1
    counter.classList.toggle("fade-out")
