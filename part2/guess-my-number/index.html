@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Guess my number - La manu</title>
+   <link rel="stylesheet" href="public/sources/css/style.css">
+</head>
+<body>
+   <header class="main-head">
+      <h1 class="main-head-title">
+         Guess my number Challenge
+      </h1>
+   </header>
+   <main class="main-content swipe-top">
+      <section class="gameboard">
+         <h2 class="gameboard-title">
+            Devine le bon nombre
+         </h2>
+         <form id="gameform">
+            <input type="number" id="user-nbr" name="user-nbr" min="0" step="1" placeholder="0 à 100" onkeypress="return event.charCode >= 48"/>
+            <input type="submit" value="Tenter ma chance" id="gameform-submit" name="gameform-submit"/>
+            <input type="submit" value="Nouvelle partie" id="gameform-reset" name="gameform-reset"/>
+         </form>
+         <aside class="preview">
+            <p>
+               Nombre d'essais : <span id="nbr-tests">0</span>
+            </p>
+            <p>
+               Dernier nombre testé : <span id="last-test">0</span>
+            </p>
+            <p>
+               Résultat : <span id="result">N/A</span>
+            </p>
+            <p id="annonce-resultat">
+               Nombre d'essais maximum : 10
+            </p>
+         </aside>
+      </section>
+   </main>
+   <script src="public/sources/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculateur de fragrance</title>
+</head>
+<body>
+   <head class="main-head">
+      <h1 class="main-head-title">
+         Calcul de proportions
+      </h1>
+   </head>
+   <main class="main-content">
+      <section class="main-sections">
+         <form class="calcul-form">
+            <label for="wax-weight">Poids d'eau mesuré (en g) : </label>
+            <input type="number" min="0" id="wax-weight" name="wax-weight" placeholder="100"/>
+            <label for="fragrance-part">Pourcentage de fragrance désiré : </label>
+            <input type="number" min="0" id="fragrance-part" name="fragrance-part" placeholder="7"/>
+         </form>
+            <p class="card-description">
+               Dosage final :
+               <ul class="dosage-list">
+                  <li class="dosage-list-items">
+                     Poids (en g) de cire : <b><span>0</span>g</b>
+                  </li>
+                  <li class="dosage-list-items">
+                     Poids (en g) de fragrance : <b><span>0</span>g</b>
+                  </li>
+               </ul>
+            </p>
+      </section>
+   </main>
+</body>
+</html>
