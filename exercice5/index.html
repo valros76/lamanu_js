@@ -4,20 +4,26 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Exercice 5 - JS</title>
+   <link rel="stylesheet" href="public/sources/css/style.css">
 </head>
 <body>
    <header class="main-head">
       <h1 class="main-head-title">Javascript - Exercice 5</h1>
    </header>
-   <main>
-      <form>
-         <label for="first">Entrez un nombre décimal : </label>
-         <input type="number" placeholder="1.23" id="first"/>
-         <label for="second">Entrez un autre nombre décimal : </label>
-         <input type="number" placeholder="2.34" id="second" />
-         <button id="submit">Calculer</button>
-      </form>
-      <p id="result"></p>
+   <main class="main-content">
+      <section class="main-sections">
+         <h2 class="main-sections-title">
+            Multiplication de nombre décimaux
+         </h2>
+         <form class="exercice-form">
+            <label for="first">Entrez un nombre décimal : </label>
+            <input type="number" placeholder="1.23" id="first"/>
+            <label for="second">Entrez un autre nombre décimal : </label>
+            <input type="number" placeholder="2.34" id="second" />
+            <button id="submit">Calculer</button>
+         </form>
+         <p id="result"></p>
+      </section>
    </main>
    <script src="public/sources/js/alert.js"></script>
 </body>
