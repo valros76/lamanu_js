@@ -70,9 +70,18 @@ window.addEventListener("DOMContentLoaded", (e) => {
       annonce.textContent = "Nouvelle partie en cours"
       main.style.backgroundColor = main_initial_color
       count_tests = 0
-      setTimeout(()=>{
+      setTimeout(() => {
          submit_btn.classList.remove("fade-in")
          submit_btn.removeAttribute("disabled")
-      },750)
+      }, 750)
+   })
+
+   document.addEventListener("keyup", (e) => {
+      switch (e.code) {
+         case "Enter":
+            submit_btn.click()
+            break;
+         default:
+      }
    })
 })
