@@ -53,11 +53,13 @@ let keyboardCalc = (btn, action, displayNum, previousKeyType) => {
       case "substract":
       case "divide":
       case "multiply":
-         calculator_view.dataset.firstValue = calculator_view.value
-         calculator_view.dataset.operator = action
-         calculator_view.dataset.previousKeyType = "operator"
-         calculator_view.value = ""
-         equality = false
+         if(calculator_view.dataset.previousKeyType != "operator"){
+            calculator_view.dataset.firstValue = calculator_view.value
+            calculator_view.dataset.operator = action
+            calculator_view.dataset.previousKeyType = "operator"
+            calculator_view.value = ""
+            equality = false
+         }
          break
       case "equal":
          const n1 = calculator_view.dataset.firstValue
