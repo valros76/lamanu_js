@@ -169,6 +169,11 @@ document.addEventListener("keyup", (e) => {
                btn.click()
             }
             break
+         case "NumpadDecimal":
+            if (btn.dataset.btn === "decimal") {
+               btn.click()
+            }
+            break
          case "NumpadEnter":
             if (btn.dataset.btn === "equal") {
                btn.click()
