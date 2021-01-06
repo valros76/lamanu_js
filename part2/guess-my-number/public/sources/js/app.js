@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", (e) => {
+﻿window.addEventListener("DOMContentLoaded", (e) => {
    var user_nbr = document.getElementById("user-nbr")
    var submit_btn = document.getElementById("gameform-submit")
    var reset_btn = document.getElementById("gameform-reset")
