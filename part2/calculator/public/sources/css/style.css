@@ -90,7 +90,7 @@ body{
    transform:translate(1px, 1.5px);
 }
 
-.calculator-group button:focus{
+.is-focus{
    cursor:pointer;
    background:#fff;
    box-shadow:

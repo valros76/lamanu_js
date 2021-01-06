@@ -39,6 +39,10 @@ let calcResult = (operator, n1, n2) => {
 }
 
 let keyboardCalc = (btn, action, displayNum, previousKeyType) => {
+   btn.classList.toggle("is-focus")
+   setTimeout(()=>{
+      btn.classList.toggle("is-focus")
+   },250)
    switch (action) {
       case "clear":
          calculator_view.value = ""
