@@ -47,6 +47,7 @@ decrementation.addEventListener("click", () => {
 })
 
 document.addEventListener("keyup", (e) => {
+   console.log(e.code)
    switch (e.code) {
       case "ArrowRight":
       case "KeyD":
