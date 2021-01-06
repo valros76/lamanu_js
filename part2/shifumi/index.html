@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shifumi - Offert par Webdevoo</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/sources/css/style.css">
+  </head>
+  <body>
+    <section class="content">
+      <article class="game-board">
+        <h3>Shifumi</h3>
+        <div class="textArticleHome">
+          <button class="btn btn-info game">Pierre</button>
+          <button class="btn btn-success game">Feuille</button>
+          <button class="btn btn-warning game">Ciseaux</button>
+          <hr />
+          <div id="resultatJoueur" style="display: inline-block">
+            Joueur : X
+          </div>
+          <hr width="50px" />
+          <div>VS</div>
+          <hr width="50px" />
+          <div id="resultatRobot" style="display: inline-block">Robot : X</div>
+          <hr />
+          <div class="resultat"></div>
+          <hr />
+          <p class="score_para">Score : <span id="score">0</span></p>
+          <p>Parties remportées : <span id="score_win">0</span></p>
+          <p>Parties égales : <span id="score_equality">0</span></p>
+          <p>Parties perdues : <span id="score_lose">0</span></p>
+          <hr />
+        </div>
+      </article>
+    </section>
+    <script src="public/sources/js/app.js"
+  </body>
+</html>

@@ -1,0 +1,30 @@
+* {
+   max-width: 100%;
+   margin: 0 auto;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:system-ui,sans-serif;
+ }
+ .content {
+   width: 100vw;
+   min-width: 100vw;
+   max-width: 100vw;
+   height: 100vh;
+   min-height: 100vh;
+   max-height: 100vh;
+   display: flex;
+   overflow: auto;
+   text-align: center;
+   position: relative;
+ }
+ .game-board {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+ }
+ .score_para{
+   font-weight:700;
+ }
