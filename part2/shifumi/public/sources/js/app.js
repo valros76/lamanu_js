@@ -1,4 +1,4 @@
-
+﻿
 window.addEventListener("DOMContentLoaded", (e) => {
    const buttons = document.getElementsByClassName("game");
    let score = 0;
