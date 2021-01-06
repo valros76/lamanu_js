@@ -126,5 +126,15 @@ body{
 
 .group-6{
    grid-column:4;
-   grid-row:2/6;
+   grid-row:3/7;
+}
+
+.calc-icon{
+   background-image:url("../../assets/images/W32x32_light.png");
+   background-repeat:no-repeat;
+   background-size:contain;
+   background-position:center;
+   filter:brightness(120%);
+   grid-column:4;
+   grid-row:2;
 }

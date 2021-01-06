@@ -1,9 +1,12 @@
 var calculator_view = document.getElementById("calculator-view")
 var calculator_btns = document.querySelectorAll(".btn-calculator")
 calculator_view.value = "0"
+var equality = false
 let showInput = (input) => {
    if (Number(calculator_view.value) === 0) {
       calculator_view.value = input
+   } else if (equality === true) {
+      calculator_view.value = calculator_view.value
    } else {
       calculator_view.value += input
    }
@@ -36,11 +39,11 @@ let calcResult = (operator, n1, n2) => {
 }
 
 let keyboardCalc = (btn, action, displayNum, previousKeyType) => {
-   btn.focus()
    switch (action) {
       case "clear":
          calculator_view.value = ""
          calculator_view.dataset.previousKeyType = 'clear'
+         equality = false
          break
       case "decimal":
          showInput(btn.textContent)
@@ -52,7 +55,9 @@ let keyboardCalc = (btn, action, displayNum, previousKeyType) => {
       case "multiply":
          calculator_view.dataset.firstValue = calculator_view.value
          calculator_view.dataset.operator = action
+         calculator_view.dataset.previousKeyType = "operator"
          calculator_view.value = ""
+         equality = false
          break
       case "equal":
          const n1 = calculator_view.dataset.firstValue
@@ -60,6 +65,7 @@ let keyboardCalc = (btn, action, displayNum, previousKeyType) => {
          const n2 = displayNum
          if (calculator_view.dataset.previousKeyType != "equal") {
             calcResult(operator, n1, n2)
+            equality = true
          }
          calculator_view.dataset.previousKeyType = "equal"
          break
@@ -84,7 +90,7 @@ calculator_btns.forEach((btn) => {
 })
 
 document.addEventListener("keyup", (e) => {
-   e.preventDefault()
+   console.log(e.code)
    calculator_btns.forEach((btn) => {
       switch (e.code) {
          case "Numpad0":
