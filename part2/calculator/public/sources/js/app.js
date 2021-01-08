@@ -36,6 +36,7 @@ let calcResult = (operator, n1, n2) => {
       default:
          console.log(`Operator : ${operator}, n1 : ${n1}, n2 : ${n2}`)
    }
+   console.log(history)
 }
 
 let keyboardCalc = (btn, action, displayNum, previousKeyType) => {
