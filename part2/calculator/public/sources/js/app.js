@@ -50,8 +50,10 @@ let keyboardCalc = (btn, action, displayNum, previousKeyType) => {
          equality = false
          break
       case "decimal":
+         if(calculator_view.dataset.previousKeyType != "decimal"){
          showInput(btn.textContent)
          calculator_view.dataset.previousKeyType = 'decimal'
+         }
          break
       case "add":
       case "substract":
